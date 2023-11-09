@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtTitle"
+        android:id="@+id/txtTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="26sp"
+        android:layout_gravity="top"
+        android:layout_marginTop="64dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txtLength"
+        android:layout_below="@+id/txtTitle"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/hint"
+        android:textSize="26sp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout01"
+        >
+
+        <Button
+            android:id="@+id/btn"
+            android:text="@string/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:layout_weight="1"
+            android:layout_marginTop="500dp"
+        />
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"
+        />
+
+        <Button
+            android:id="@+id/btnCopy"
+            android:text="@string/btnCopy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:layout_toRightOf="@id/btn"
+            android:layout_weight="1"
+            android:layout_marginTop="500dp"
+        />
+
+    </LinearLayout>
+    <!--
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="160dp"
+        android:drawSelectorOnTop="true"
+        android:entries="@array/spinnerItems"
+        android:layout_height="38dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:spinnerMode="dialog"
+        />
+    -->
+
+</RelativeLayout>

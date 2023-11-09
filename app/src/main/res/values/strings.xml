@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Forte</string>
+
+    <string name="txtTitle">Random Password Generator</string>
+    <string name="btn">Generate</string>
+    <string name="hint">Length (5 - 20)</string>
+    <string name="btnCopy">Copy</string>
+    <string name="txtSplash">Reinvent\nSecurity</string>
+
+
+    <string-array name="spinnerItems">
+        <item>item1</item>
+        <item>item2</item>
+        <item>item3</item>
+        <item>item4</item>
+    </string-array>
+
+</resources>
